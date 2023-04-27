@@ -8,6 +8,7 @@ public class SUTTest {
     void shouldReturnAnswer() {
         given()
                 .baseUri("https://postman-echo.com")
+                .contentType("text/plain; charset=UTF-8")
                 .body("Ха-ха-ха-ха")
                 .when()
                 .post("/post")
