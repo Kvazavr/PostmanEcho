@@ -8,12 +8,12 @@ public class SUTTest {
     void shouldReturnAnswer() {
         given()
                 .baseUri("https://postman-echo.com")
-                .body("Ха-ха-ха-ха-ха")
+                .body("some data")
                 .when()
                 .post("/post")
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("Ха-ха-ха-ха-ха"))
+                .body("data", equalTo("some data"))
         ;
     }
 }
